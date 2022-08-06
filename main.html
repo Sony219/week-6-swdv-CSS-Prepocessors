@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SamyCa Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    
+    /*Color variables i declared here */
+    :root{
+    --main-col:	#FFFFFF;
+    --main-col2:#f3eded;
+    --main-col3:white;
+    --main-col4:black;
+    }
+
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #ce99c5;
+        }
+
+        .header {
+            padding: 60px;
+            text-align: center;
+            background: var(--main-col);
+            color: black;
+        }
+
+        #logo {
+            display: inline-block;
+            margin: 15px; 
+            float: left;
+            height: 70px;
+            width: auto; 
+            border-radius: 50%; 
+
+            
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid grey;
+        }
+
+        button {
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid grey;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: var(--main-col2);
+        }
+
+        .navbar a {
+            color: black;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(245, 239, 239);
+            color:  var(--main-col2);
+        }
+
+        /* Column container */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Sidebar/left column */
+        .side {
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        .main {
+            flex: 70%;
+            background-color:rgb(206, 164, 195);
+            padding: 20px;
+        }
+
+        /* Image just for example */
+        .container {
+            background-color: var(--main-col3);
+            color: black;
+            border-radius: 1%;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: var(--main-col2);
+        }
+
+        /* Media query which enables the mobile view once the screen becomes 700px */
+        @media screen and (max-width: 700px) {
+
+            .row,
+            .navbar {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <a href="#"><img id="logo" src="logo.jpg"></a>
+        <h1>SamyCa Store </h1>
+        <input type="text" placeholder="Search..">
+        <button>Search</button>
+        
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Kid & Baby</a>
+        <a href="#">Shoes</a>
+        <a href="#">All Special</a>
+    </div>
+
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <div class="main">
+            <h2>Shop All Doorbuste</h2>
+            <h5>Extra 25% OFF for Any purchap with Coupon Earn Bonus Points NOW</h5>
+
+            <div class="container">
+                <img src="baby.png" alt="Image" style="height:200px;">
+            </div>
+            <p>Babies's clother unisex</p>
+
+            <br>
+
+            <div class="container">
+                <img src="Men Shirt.png" alt="Image" style="height:200px;">
+            </div>
+            <p>Men's Shirt</p>
+        
+
+            <div class="container">
+                <img src="Sandal.png" alt="Image" style="height:200px;">
+            </div>
+            <p>a.n.a Women Wvi Sandals</p>
+            <p>$27.99 sale 60% off</p>
+            <p>was $70</p>
+
+
+            <div class="container">
+                <img src="Women.jpeg" alt="Image" style="height:200px;">
+            </div>
+            <p>Classic dressy</p>
+           
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <button type="button">Special Register</button>
+    </div>
+
+</body>
+
+</html>
